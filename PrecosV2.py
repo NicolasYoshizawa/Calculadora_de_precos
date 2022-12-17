@@ -4,7 +4,7 @@ import tkinter.font as tkFont
 import pandas as pd
 
 # Lê e trata a base de dados em excel
-data = pd.read_excel(r"C:\Users\nicolas'\Desktop\Takashi\preços das unidades.xlsx", engine='openpyxl')
+data = pd.read_excel("preços das unidades.xlsx", engine='openpyxl')
 data = data.drop(columns='prato')
 
 # Cria e configura a interface gráfica
