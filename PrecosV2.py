@@ -34,7 +34,7 @@ def calcular():
     texto5['text'] = '{} un de gyozá fica R${:.2f}'.format(x, gyoza * x)
     entry.delete(0, END)
 
-# Cria a entreda para receber a varável do usuário
+# Cria a entreda para receber a variável do usuário
 entry = Entry(root, bd='5', bg=background2)
 entry.pack(padx=10, pady=10)
 
