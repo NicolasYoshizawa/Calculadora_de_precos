@@ -20,7 +20,7 @@ root.configure(bg=background)
 fontStyle = tkFont.Font(family="Comic Sans MS", size=13)
 
 # Cria a função responsável por obter a variável do usuário, calcular o preço total e exibe na interface gráfica
-def calcular():
+def calcular(event):
     sashimi = data['preço'][0]
     tako = data['preço'][1]
     niguiri = data['preço'][2]
@@ -41,6 +41,8 @@ entry.pack(padx=10, pady=10)
 # Cria o botão para executar a função
 botao = Button(root, text='Calcular', bd='5', command=calcular, height=2, width=10, bg=background2)
 botao.pack(padx=10, pady=10)
+
+root.bind('<Return>', calcular)
 
 # Configuração para que o preço apareça na interface gráfica
 texto1 = Label(root, text='', font=fontStyle, bg=background, foreground='white')
